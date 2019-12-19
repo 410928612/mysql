@@ -1,2 +1,10 @@
 mysqlbinlog导出备份的数据库（根据时间）
 mysqlbinlog --no-defaults -d 库名 --start-datetime="2019/10/20 11:48:56" --stop-datetime="2019/10/25 11:48:56" /alidata/server/mysql-5.5.37/data/mysql-bin.000019(日志路径) > 文件名.sql
+
+创建数据库用户
+create user '用户名'@'%' identified by '密码';
+修改数据库用户密码
+alter user '用户名'@'%' identified by '密码';
+赋予用户权限
+grant all privileges on xiechong.* to '用户名'@'%';
+flush privileges;刷新权限
