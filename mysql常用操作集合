@@ -1,0 +1,2 @@
+mysqlbinlog导出备份的数据库（根据时间）
+mysqlbinlog --no-defaults -d 库名 --start-datetime="2019/10/20 11:48:56" --stop-datetime="2019/10/25 11:48:56" /alidata/server/mysql-5.5.37/data/mysql-bin.000019(日志路径) > 文件名.sql
